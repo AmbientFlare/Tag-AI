@@ -1,0 +1,19 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+*.log
+
+# Local application data
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+config.ini
+config*.ini
+
+# Editor and operating-system files
+.DS_Store
+.vscode/
+
+.venv/
+.release-venv/

@@ -1,0 +1,173 @@
+/* Dark Mode Centralized Stylesheet for Tag-AI */
+
+/* Global Color Palette */
+QWidget {
+    background-color: #121212;  /* Deep black */
+    color: #E0E0E0;  /* Light silver-gray */
+    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif"; /* ADDED FONT FAMILY */
+    selection-background-color: #2A82DA;  /* Keeping your original highlight blue */
+    selection-color: #FFFFFF;
+}
+
+/* Main Window and Dialogs */
+QMainWindow, QDialog {
+    background-color: #1E1E1E;  /* Very dark charcoal */
+}
+
+/* Title Bars and Headers */
+QLabel {
+    color: #E0E0E0;  /* Light silver-gray */
+}
+
+QLabel:disabled {
+    color: #A0A0A0;  /* Muted silver-gray */
+}
+
+/* Input Fields */
+QLineEdit, QTextEdit, QSpinBox, QComboBox {
+    background-color: #121212;  /* Deep black */
+    color: #E0E0E0;  /* Light silver-gray */
+    border: 1px solid #3D3D3D;  /* Dark metallic gray */
+    border-radius: 4px;
+    padding: 5px;
+}
+
+QLineEdit:focus, QTextEdit:focus, QSpinBox:focus, QComboBox:focus {
+    border-color: #2A82DA;  /* Highlight blue */
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #3D3D3D;  /* Dark metallic gray */
+    color: #E0E0E0;  /* Light silver-gray */
+    border: 1px solid #4A4A4A;  /* Slightly lighter metallic gray */
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: #2A82DA;  /* Highlight blue */
+    border-color: #2A82DA;
+}
+
+QPushButton:pressed {
+    background-color: #1E5799;  /* Darker blue */
+}
+
+QPushButton:disabled {
+    background-color: #2D2D2D;  /* Dark gray */
+    color: #A0A0A0;  /* Muted silver-gray */
+}
+
+/* Scroll Areas and Bars */
+QScrollBar:vertical {
+    background: #1E1E1E;  /* Very dark charcoal */
+    width: 15px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #3D3D3D;  /* Dark metallic gray */
+    min-height: 20px;
+    border-radius: 7px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: none;
+}
+
+QScrollBar:horizontal {
+    background: #1E1E1E;  /* Very dark charcoal */
+    height: 15px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #3D3D3D;  /* Dark metallic gray */
+    min-width: 20px;
+    border-radius: 7px;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    background: none;
+}
+
+/* Menus */
+QMenuBar {
+    background-color: #1E1E1E;  /* Very dark charcoal */
+    color: #E0E0E0;  /* Light silver-gray */
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    color: #E0E0E0;  /* Light silver-gray */
+}
+
+QMenuBar::item:selected {
+    background-color: #2A82DA;  /* Highlight blue */
+}
+
+QMenu {
+    background-color: #1E1E1E;  /* Very dark charcoal */
+    color: #E0E0E0;  /* Light silver-gray */
+    border: 1px solid #3D3D3D;  /* Dark metallic gray */
+}
+
+QMenu::item:selected {
+    background-color: #2A82DA;  /* Highlight blue */
+}
+
+/* Tooltips */
+QToolTip {
+    background-color: #2D2D2D;  /* Dark gray */
+    color: #E0E0E0;  /* Light silver-gray */
+    border: 1px solid #3D3D3D;  /* Dark metallic gray */
+}
+
+/* Combo Box */
+QComboBox::drop-down {
+    background-color: #3D3D3D;  /* Dark metallic gray */
+    color: #E0E0E0;  /* Light silver-gray */
+    border: none;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #1E1E1E;  /* Very dark charcoal */
+    color: #E0E0E0;  /* Light silver-gray */
+    selection-background-color: #2A82DA;  /* Highlight blue */
+}
+
+/* Status Bars */
+QStatusBar {
+    background-color: #1E1E1E;  /* Very dark charcoal */
+    color: #A0A0A0;  /* Muted silver-gray */
+}
+
+/* Tabs */
+QTabWidget::pane {
+    background-color: #1E1E1E;  /* Very dark charcoal */
+    border: 1px solid #3D3D3D;  /* Dark metallic gray */
+}
+
+QTabBar::tab {
+    background-color: #1E1E1E;  /* Very dark charcoal */
+    color: #E0E0E0;  /* Light silver-gray */
+    padding: 5px 10px;
+    border: 1px solid #3D3D3D;  /* Dark metallic gray */
+}
+
+QTabBar::tab:selected {
+    background-color: #2A82DA;  /* Highlight blue */
+}
+
+/* Progress Bars */
+QProgressBar {
+    background-color: #121212;  /* Deep black */
+    color: #E0E0E0;  /* Light silver-gray */
+    border: 1px solid #3D3D3D;  /* Dark metallic gray */
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background-color: #2A82DA;  /* Highlight blue */
+}
